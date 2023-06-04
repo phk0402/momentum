@@ -1,14 +1,8 @@
-const h1 = document.querySelector(".hello:first-child h1");
+const loginInput = document.querySelector(".login-form input");
+const loginButton = document.querySelector(".login-form button");
 
-function handleTitleClick() {
-  const currentColor = h1.style.color;
-  let newColor;
-  if (currentColor === "blue") {
-    newColor = "tomato"
-  } else {
-    newColor = "blue"
-  }
-  h1.style.color = newColor;
+function onLoginBtnClick() {
+  console.log(loginInput.value)
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onLoginBtnClick)
