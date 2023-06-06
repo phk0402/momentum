@@ -5,14 +5,17 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ㄹe=edge" http-equiv="X-UA-Compatible">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Momentum App</title>
 </head>
 <body>
-<div class="login-form">
-    <input placeholder="What is your name?" type="text" />
-    <button>Log In</button>
-</div>
-<script src="app.js"></script>
+    <form class="login-form hidden">
+        <input required maxlength="15" placeholder="What is your name?" type="text" />
+        <input type="submit" value="Log In">
+    </form>
+    <h2 class="clock">00:00:00</h2>
+    <h1 class="greeting hidden"></h1>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 </html>
