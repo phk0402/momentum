@@ -6,15 +6,15 @@ function paintToDo(newTodo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   li.appendChild(span);
-  span.innerText = newTodo;
-
+  span.innerText = newTodo; // span의 텍스트는 handleToDoSubmit에서 온 newTodo 텍스트가 됨
+  toDoList.appendChild(li);
 }
 
 function handleToDoSubmit(evnet) {
   evnet.preventDefault();
-  const newToDo = todoInput.value;
+  const newTodo = todoInput.value;
   todoInput.value = "";
-  paintToDo(newToDo);
+  paintToDo(newTodo);
 }
 
 todoForm.addEventListener("submit", handleToDoSubmit)
