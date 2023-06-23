@@ -1,9 +1,19 @@
 const todoForm = document.getElementById("todo-form");
-const todoInput = todoForm.querySelector("input")
+const toDoInput = todoForm.querySelector("input")
 const toDoList = document.getElementById("todo-list");
 
+const TODOS_KEY = "todos"
+
+const toDos = [];
+
+// save
+function saveToDos() {
+  localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+}
+
+// deleting
 function deleteToDo(event) {
-   const li = event.target.parentElement;
+  const li = event.target.parentElement;
   li.remove();
 }
 
@@ -21,9 +31,19 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(evnet) {
   evnet.preventDefault();
-  const newTodo = todoInput.value;
-  todoInput.value = "";
+  const newTodo = toDoInput.value;
+  toDoInput.value = "";
+  toDos.push(newTodo);
   paintToDo(newTodo);
+  saveToDos();
 }
 
-todoForm.addEventListener("submit", handleToDoSubmit)
+todoForm.addEventListener("submit", handleToDoSubmit);
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(savedToDos);
+  console.log(parsedToDos);
+  parsedToDos.forEach((item) => console.log("this is the turn of", item));
+}
