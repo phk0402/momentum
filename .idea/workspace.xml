@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="162b01d5-a410-49fe-8d36-853489149dd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/weather.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/greeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/greeting.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="57a23d6d-3fbf-4cd5-af1e-e5d895bb3746" />
@@ -52,6 +64,19 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +101,7 @@
       <workItem from="1687351801848" duration="4180000" />
       <workItem from="1687529492897" duration="2301000" />
       <workItem from="1687532864109" duration="1550000" />
-      <workItem from="1687612145826" duration="4626000" />
+      <workItem from="1687612145826" duration="7855000" />
     </task>
     <servers />
   </component>
